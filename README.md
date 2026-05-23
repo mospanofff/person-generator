@@ -5,15 +5,15 @@ Generator of realistic RU/UA names and surnames.
 ## Install
 
 ```bash
-pip install -U git+https://github.com/mospanofff/person-generator.git@v0.1.1
+pip install person-generator
 ```
 
 ## Usage
 
 ```python
-from person_generator import PersonGenerator, Locale
+from person_generator import PersonGenerator
 
 generator = PersonGenerator()
 
-person = generator.generate(locale=Locale.UA)
+print(generator.generate_ua_male().full_name)
 ```
