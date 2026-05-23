@@ -27,4 +27,7 @@ def ua_female_surname(surname: str) -> str:
     if surname.endswith("ій"):
         return surname[:-2] + "я"
 
+    if surname.endswith("ов"):
+        return surname + "а"
+
     return surname
