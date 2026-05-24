@@ -30,8 +30,8 @@ class PersonGenerator:
         raise ValueError(f"Unsupported locale: {locale}")
 
     def generate_random(self) -> Person:
-        locale = self.random.choice([Locale.RU, Locale.UA])
-        gender = self.random.choice([Gender.MALE, Gender.FEMALE])
+        locale = Locale.random()
+        gender = Gender.random()
         return self.generate(locale=locale, gender=gender)
 
     def generate_ru_male(self) -> Person:
