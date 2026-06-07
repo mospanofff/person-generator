@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "person-generator"
-version = "0.1.7"
+version = "0.1.8"
 description = "RU/UA realistic first name and surname generator"
 readme = "README.md"
 requires-python = ">=3.10"
