@@ -5,6 +5,10 @@ from enum import Enum
 class Locale(str, Enum):
     RU = "RU"
     UA = "UA"
+    KZ = "KZ"
+    US = "US"
+    GB = "GB"
+    CA = "CA"
 
     @classmethod
     def random(cls) -> "Locale":
